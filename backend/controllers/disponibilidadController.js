@@ -1,5 +1,7 @@
 
 const Disponibilidad = require('../models/disponibilidad');
+//import{disponibilidad} from ('../models/disponibilidad.js');
+
 
 // Crear disponibilidad
 const createDisponibilidad = async (req, res) => {

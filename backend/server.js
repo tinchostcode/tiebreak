@@ -3,6 +3,8 @@ const cors = require('cors');
 const dotenv = require('dotenv');
 const connectDB = require('./config/db');
 
+const disponibilidadRoutes = require('./routes/disponibilidadRoutes');
+
 dotenv.config();
 connectDB();
 
@@ -12,7 +14,7 @@ app.use(express.json());
 
 app.use('/api/users', require('./routes/userRoutes'));
 app.use('/api/turnos', require('./routes/turnoRoutes'));
-app.use('/api/disponibilidad',require('./routes/disponibilidadRoutes'));
+app.use('/api/disponibilidad',disponibilidadRoutes);
 
 
 
